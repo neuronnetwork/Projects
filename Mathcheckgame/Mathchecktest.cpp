@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
 		if(input == 's') {
 		    s.test("");
 		} else 
-		if(input == 'u') {TEST
+		if(input == 'u') {
 		//	cout<< Mathcheck::ultimo(string("ciao bello!",400),"o""")<<endl;
 		} else if(input == 'q') {
 			break;
