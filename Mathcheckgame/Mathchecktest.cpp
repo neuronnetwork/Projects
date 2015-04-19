@@ -2,11 +2,16 @@
 using std::cin;
 using std::cout;
 using std::endl;
-//#include  "Mathcheck.h"
+#include  "Mathcheck.h"
 #include  "String.h"
+#include  "Nodo.h"
 
 
 int main(int argc, char** argv) {
+	
+	
+	Nodo a,b;	
+	
 	char input = 0;
 	
 	cout << "Press q to quit, press a to execute foo." << endl;	
@@ -14,6 +19,17 @@ int main(int argc, char** argv) {
 	cout << "Ready." << endl;
 	while(1) {
 		cin >> input;
+		if(input == 'm') {
+			a=b;
+		    
+		}else
+		if(input == 'n') {
+			  
+		     cout<< (a==b)<<endl;;
+		}else
+		if(input == 'b') {
+		     cout<< (a==a)<<endl;;
+		} else
 		if(input == 's') {
 		    s.test("");
 		} else 

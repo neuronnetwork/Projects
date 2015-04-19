@@ -1,4 +1,5 @@
-
+#ifndef StringH
+#define StringH
 
 #include <string>
 using std::string; 
@@ -28,4 +29,8 @@ public:
 	string test(string);
 	 
 };
+
+
+
+#endif
 
