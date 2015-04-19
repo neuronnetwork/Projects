@@ -30,12 +30,10 @@ bool Nodo::operator ==(Nodo&altro){
 		
 	if(altro.da_tipo()!=(*this).da_tipo())
 			return false;
-			aaaaaa=233;
-	if(tipo==49)
+	if(da_tipo()==49)
 		return altro.quanto()==quanto();
-	for (int i=0;i<arita;i++)
+	for (int i=0;i<da_arita();i++)
 		if(!(altro[i]==(*this)[i]))
-			return false;
 		return true;
 }
 
@@ -49,20 +47,22 @@ Nodo& Nodo::operator =(Nodo&altro){//non e' pronta
 	}
 	
 		
-	il_tipo_sia(altro.tipo);
+	il_tipo_sia(altro.da_tipo());
 		
 	throw * new int;
 	return *this;
 }
-Nodo& Nodo::operator [](int a){
-	if(a>=arita)
+void Nodo_::operator [](int a){
+	if(a>=da_arita())
 		buta();
-	return *((Nodo*)sotto[a]);
+	return *(sotto[a]);
+}
+Nodo& Nodo::operator [](int a){
+	return *((Nodo*)(this))(zo[a]);
 }
 
 void Nodo::buta(){
 	Node_::buta();
 }
-void Nodo_::buta();
-	throw * new int;
+void Nodo_::buta(){
 }

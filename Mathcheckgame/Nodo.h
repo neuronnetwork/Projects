@@ -3,8 +3,7 @@
 
 class Nodo_{
 private:
-	int tipo;
-	int aaaaaa;
+	int tipo; 
 	int arita;
 	void* sotto[3];
 	long valore;
@@ -14,15 +13,22 @@ protected:
 	long quanto();
 	long tanto(long);
 	int da_tipo(); 
+private:
+	inline int il_tipo_sia(int t){
+		tipo=t;
+		calcola_arita();
+		return t;
+	} 
 	inline char calcola_arita(){
 		return arita=char(tipo*0.01);
 	} 
-	int il_tipo_sia(int t){
-		tipo=t;
-		calcola_arita();
-		return tipo;
-	}
-	void buta(); 
+	
+protected:
+	void* operator [](int a);
+	inline char da_arita(){
+		return arita;
+	}  
+	void butaxxxxxxxxxxxxxxx(); 
 }; 
 
 class Nodo{
