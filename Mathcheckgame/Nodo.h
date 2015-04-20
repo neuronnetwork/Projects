@@ -28,10 +28,13 @@ protected:
 	inline char da_arita(){
 		return arita;
 	}  
-	void butaxxxxxxxxxxxxxxx(); 
+	void buta(); 
 }; 
 
-class Nodo{
+
+
+
+class Nodo: public Nodo_{
 public:	 
 	Nodo(); 
 	bool  operator ==(Nodo&);
@@ -39,6 +42,7 @@ public:
 	Nodo& operator [](int a);
 	 
 	void buta(); 
+	
 }; 
 
 
