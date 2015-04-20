@@ -3,7 +3,7 @@
 #include "String.h"
   
  
-Nodo::Nodo(){  
+Nodo::Nodo(){ 
 }
  
  
@@ -50,17 +50,17 @@ Nodo& Nodo::operator =(Nodo&altro){//non e' pronsa
 	throw * new int;
 	return *this;
 }
-void Nodo_::operator [](int a){
+void * Nodo_::operator [](int a){
 	if(a>=da_arita())
 		buta();
-	return *(sotto[a]);
+	return sotto[a];
 }
 Nodo& Nodo::operator [](int a){
-	return *((Nodo*)(this))(zo[a]);
+	return *((Nodo*)(Nodo_::operator [](a) ));
 }
 
 void Nodo::buta(){
-	Node_::buta();
+	Nodo_::buta();
 }
 void Nodo_::buta(){
 }

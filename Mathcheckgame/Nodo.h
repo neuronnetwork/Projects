@@ -13,12 +13,12 @@ protected:
 	long quanto();
 	long tanto(long);
 	int da_tipo(); 
-private:
 	inline int il_tipo_sia(int t){
 		tipo=t;
 		calcola_arita();
 		return t;
 	} 
+private:
 	inline char calcola_arita(){
 		return arita=char(tipo*0.01);
 	} 
@@ -28,7 +28,7 @@ protected:
 	inline char da_arita(){
 		return arita;
 	}  
-	void buta(); 
+	void buta();  
 }; 
 
  
