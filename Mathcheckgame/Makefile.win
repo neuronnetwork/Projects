@@ -1,0 +1,34 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.10
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Mathchecktest.o String.o Nodo.o
+LINKOBJ  = Mathchecktest.o String.o Nodo.o
+LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW32/lib" -L"C:/Program Files/Dev-Cpp/MinGW32/mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files/Dev-Cpp/MinGW32/include" -I"C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.6.1/include"
+CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW32/include" -I"C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.6.1/include" -I"C:/Program Files/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.6.1/include/c++"
+BIN      = Mathcheck.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Mathchecktest.o: Mathchecktest.cpp
+	$(CPP) -c Mathchecktest.cpp -o Mathchecktest.o $(CXXFLAGS)
+
+String.o: String.cpp
+	$(CPP) -c String.cpp -o String.o $(CXXFLAGS)
+
+Nodo.o: Nodo.cpp
+	$(CPP) -c Nodo.cpp -o Nodo.o $(CXXFLAGS)
