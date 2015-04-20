@@ -7,7 +7,6 @@
 class Mathcheck{
          public:  
                 static string testo_per_memo(string);
-                static int ultima(string s,int cosa);
                 static int ultimo(string s,int cosa);
                 static int ultimo(string s,int da,string cosa);
                 static int ultimo(string s,string cosa);

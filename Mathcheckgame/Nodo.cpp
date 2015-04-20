@@ -1,10 +1,15 @@
- 
 #include "Nodo.h"
-#include "String.h"
-  
+#include "String.h" 
  
-Nodo::Nodo(){ 
+
+Nodo::Nodo(){
 }
+ 
+long Nodo_::quanto(){
+	if(tipo!=49)
+		buta();
+	return valore;
+} 
  
  
 int Nodo_::da_tipo(){

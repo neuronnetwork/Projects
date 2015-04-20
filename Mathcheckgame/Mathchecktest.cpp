@@ -4,16 +4,16 @@ using std::cout;
 using std::endl;
 #include  "Mathcheck.h"
 #include  "String.h"
-#include  "Nodo.cpp"
+#include  "Nodo.h"
 
 
 int main(int argc, char** argv) {
 	
 	
-	Nodo a,b;	
+	Nodo a,b;
+    	
 	
 	char input = 0;
-	
 	cout << "Press q to quit, press a to execute foo." << endl;	
 	String s;s="sdsd";
 	cout << "Ready." << endl;

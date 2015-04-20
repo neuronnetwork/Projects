@@ -1,17 +1,17 @@
-# Project: Project1
+# Project: Mathcheck
 # Makefile created by Dev-C++ 5.10
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = Mathchecktest.o String.o
-LINKOBJ  = Mathchecktest.o String.o
-LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW32/lib"
-INCS     = -I"C:/Program Files/Dev-Cpp/MinGW32/include"
-CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW32/include"
+OBJ      = Nodo.o String.o Mathcheck.o Mathchecktest.o Teorema.o
+LINKOBJ  = Nodo.o String.o Mathcheck.o Mathchecktest.o Teorema.o
+LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
+INCS     = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
+CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
 BIN      = Mathcheck.exe
-CXXFLAGS = $(CXXINCS) 
-CFLAGS   = $(INCS) 
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -24,8 +24,17 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-Mathchecktest.o: Mathchecktest.cpp
-	$(CPP) -c Mathchecktest.cpp -o Mathchecktest.o $(CXXFLAGS)
+Nodo.o: Nodo.cpp
+	$(CPP) -c Nodo.cpp -o Nodo.o $(CXXFLAGS)
 
 String.o: String.cpp
 	$(CPP) -c String.cpp -o String.o $(CXXFLAGS)
+
+Mathcheck.o: Mathcheck.cpp
+	$(CPP) -c Mathcheck.cpp -o Mathcheck.o $(CXXFLAGS)
+
+Mathchecktest.o: Mathchecktest.cpp
+	$(CPP) -c Mathchecktest.cpp -o Mathchecktest.o $(CXXFLAGS)
+
+Teorema.o: Teorema.cpp
+	$(CPP) -c Teorema.cpp -o Teorema.o $(CXXFLAGS)

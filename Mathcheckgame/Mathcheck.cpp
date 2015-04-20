@@ -1,15 +1,12 @@
 #include  "Mathcheck.h"
-
-int Mathcheck::ultima(string s,string cosa){
-	return ultimo(s,0,cosa);
-}
+ 
 int Mathcheck::ultimo(string s,string cosa){
 	return ultimo(s,0,cosa);
 }
 int Mathcheck::ultimo(string s,int da,string cosa)
         {
         int i=da;
-        int stente;
+        int siguente;
         while((siguente=s.find(cosa, i))!= string::npos)
         {
         i = siguente+1;
