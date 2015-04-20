@@ -4,7 +4,7 @@ using std::cout;
 using std::endl;
 #include  "Mathcheck.h"
 #include  "String.h"
-#include  "Nodo.h"
+#include  "Nodo.cpp"
 
 
 int main(int argc, char** argv) {

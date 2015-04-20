@@ -81,7 +81,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=Nodo.cpp
+FileName=Nodo.app
 CompileCpp=1
 Folder=
 Compile=1

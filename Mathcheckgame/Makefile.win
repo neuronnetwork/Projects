@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = Mathchecktest.o String.o Nodo.o
-LINKOBJ  = Mathchecktest.o String.o Nodo.o
+OBJ      = Mathchecktest.o String.o
+LINKOBJ  = Mathchecktest.o String.o
 LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW32/lib"
 INCS     = -I"C:/Program Files/Dev-Cpp/MinGW32/include"
 CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW32/include"
@@ -29,6 +29,3 @@ Mathchecktest.o: Mathchecktest.cpp
 
 String.o: String.cpp
 	$(CPP) -c String.cpp -o String.o $(CXXFLAGS)
-
-Nodo.o: Nodo.cpp
-	$(CPP) -c Nodo.cpp -o Nodo.o $(CXXFLAGS)

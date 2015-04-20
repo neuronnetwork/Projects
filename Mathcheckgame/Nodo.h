@@ -31,7 +31,7 @@ protected:
 	void buta(); 
 }; 
 
-
+ 
 
 
 class Nodo: public Nodo_{
@@ -43,8 +43,13 @@ public:
 	 
 	void buta(); 
 	
-}; 
+};  
 
-
+long Nodo_::quanto(){
+	if(tipo!=49)
+		buta();
+	return valore;
+} 
+ 
 #endif
 

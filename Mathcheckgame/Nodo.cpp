@@ -1,6 +1,8 @@
-
+ 
 #include "Nodo.h"
+#include "String.h"
   
+ 
 Nodo::Nodo(){  
 }
  
@@ -15,11 +17,6 @@ Nodo_::Nodo_():valore(33){
 }
 
 
-long Nodo_::quanto(){
-	if(tipo!=49)
-		buta();
-	return valore;
-}
 
 long Nodo_::tanto(long v){
 	if(tipo!=49)
@@ -38,7 +35,7 @@ bool Nodo::operator ==(Nodo&altro){
 		return true;
 }
 
-Nodo& Nodo::operator =(Nodo&altro){//non e' pronta
+Nodo& Nodo::operator =(Nodo&altro){//non e' pronsa
 
 		return *this;
 		
