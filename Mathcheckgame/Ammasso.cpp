@@ -1,5 +1,5 @@
 #include "Ammasso.h"
-#include <cassert>
+#include "Mathcheck.h"
 
 		
 Ammasso::Ammasso():quanti_a_destra_(0),quanti_a_sinistra_(0){
@@ -52,14 +52,21 @@ bool Ammasso::paragonare() const{
 }
 
 
-Teorema& Ammasso::di_sinistra(char wo){
+Teorema& Ammasso::di_sinistra(char wo)const {
 		if(wo<0)
 			throw "Troppo lontano!";
 		if(!(wo<quanti_a_sinistra()))
 			throw "Troppo lontano!";
-		assert("sdsd"); 
+		BESTAETIGEN("sdsd"); 
+		return *teorema_di_sinistra[wo];
 	}
-Teorema& di_destra(char)const{
-	}
+	
+Teorema& Ammasso::di_destra(char wo) const {
+		if(wo<0)
+			throw "Troppo lontano!";
+		if(!(wo<quanti_a_destra()))
+			throw "Troppo lontano!"; 
+		return *teorema_di_destra[wo];
+	} 
 
  
