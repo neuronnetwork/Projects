@@ -23,6 +23,11 @@ int main(int argc, char** argv) {
 	while(1) {
 		cin >> input;
 		if(input == 'b') { 
+		
+			u.add_a_sinistra(y);
+		}else
+		if(input == 'p') { 
+		cout<<u.paragonare()<<endl;		
 		}else
 		if(input == 'a') try{
 		

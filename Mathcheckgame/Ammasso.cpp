@@ -19,10 +19,10 @@ char Ammasso::quanti_a_destra() const{
 char Ammasso::quanti_a_sinistra()const{
 	return quanti_a_sinistra_;
 }
-
-
+ 
 void Ammasso::add_a_destra(Teorema&t){
-	if(quanti_a_destra()>=max) 
+//	if(quanti_a_destra()>=max) 
+		ASSERT( 1, "Un ammasso e' pieno!");
 		throw "Un ammasso e' pieno!";
 	teorema_di_destra[quanti_a_destra_++]=&t;
 }
@@ -30,7 +30,7 @@ void Ammasso::add_a_destra(Teorema&t){
 
 void Ammasso::add_a_sinistra(Teorema&t){
 	if(quanti_a_sinistra()>=max) 
-		throw "Un ammasso e' pieno!";
+		BESTAETIGEN ("Un ammasso e' pieno!");
 	teorema_di_sinistra[quanti_a_sinistra_++]=&t;
 }
 
@@ -52,8 +52,8 @@ bool Ammasso::paragonare() const{
 }
 
 
-Teorema& Ammasso::di_sinistra(char wo)const {
-		if(wo<0)
+Teorema& Ammasso::di_sinistra(char wo) const {
+		//if(wo<0)
 			throw "Troppo lontano!";
 		if(!(wo<quanti_a_sinistra()))
 			throw "Troppo lontano!";
