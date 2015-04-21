@@ -27,10 +27,11 @@ int main(int argc, char** argv) {
 			u.add_a_d_in_sicurezza(x); 
 		}else
 		if(input == 'p') { 
-		cout<<u.paragonare()<<endl;		
+		cout<<u.paragonare()<<endl;	
+		cout<<(int)u.quanti_a_sinistra()<<"..........."<<(int)u.quanti_a_destra()<<endl;
+	//	cout<<u.teorema_di_sinistra(1)<<endl;		
 		}else
 		if(input == 'a')  {
-		
 			u.add_a_s_in_sicurezza(x);
 	cout << "added." << endl; 
 		 }

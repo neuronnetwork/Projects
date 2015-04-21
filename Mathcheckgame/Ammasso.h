@@ -15,18 +15,20 @@ public:
 
 	char quanti_a_destra() const;
 	char   quanti_a_sinistra() const;
-	Teorema& di_sinistra(char) const;
-	Teorema& di_destra(char) const;
+	Teorema& teorema_di_sinistra(char) const;
+	Teorema& teorema_di_destra(char) const;
 	bool paragonare() const;
 	
 protected:
 	void add_a_destra  (Teorema&);	
 	void add_a_sinistra(Teorema&);	
 	
+	Teorema* tds2;
 private:
 	static const char max=3;
-	Teorema* teorema_di_sinistra[max];
-	Teorema* teorema_di_destra[max];	
+	Teorema* tds[max];
+	Teorema* t_di_sinistra[max];
+	Teorema* t_di_destra[max];	
 	char quanti_a_sinistra_;	
 	char quanti_a_destra_;
 	
