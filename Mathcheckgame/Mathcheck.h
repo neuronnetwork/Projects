@@ -14,6 +14,8 @@ class Mathcheck{
                 static int saltare(string s,int da,string cosa);
                 static int spazi(string&s,int da=0,string cosa=" ",string con="_");
                 static int mangia(string&s,int da,string cosa=" ");
+                
+                static inline void macht_nichts(){	};
 };
 
 #endif

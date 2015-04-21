@@ -22,7 +22,7 @@ char Ammasso::quanti_a_sinistra()const{
  
 void Ammasso::add_a_destra(Teorema&t){
 //	if(quanti_a_destra()>=max) 
-		ASSERT( 1, "Un ammasso e' pieno!");
+		BESTAETIGEN("Un ammasso e' pieno!");
 		throw "Un ammasso e' pieno!";
 	teorema_di_destra[quanti_a_destra_++]=&t;
 }
