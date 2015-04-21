@@ -6,16 +6,14 @@
 #include"Nodo.h"
 
 
-class Teorema{
+class Teorema:public Nodo{
 
 	public:
 		
-	String testo;
-	Nodo   nodo_principale;
-	char stato;    //0  DRAFT
+//	String testo; 
 	
 	Teorema();
-	
+	Teorema& operator=(Teorema&);
 	
 	
 	

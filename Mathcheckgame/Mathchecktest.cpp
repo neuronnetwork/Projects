@@ -44,6 +44,12 @@ int main(int argc, char** argv) {
 			  
 		     cout<< (a==b)<<endl;;
 		}else 
+		if(input == 't') {
+		    cout<<sizeof(short)<<"     "<<sizeof(char)<<endl;
+		    cout<<sizeof(short char)<<endl;
+		    
+		COSA_TRIPLICE("Non ho nessuna catena\"!);
+		} else 
 		if(input == 's') {
 		    s.test("");
 		} else 
