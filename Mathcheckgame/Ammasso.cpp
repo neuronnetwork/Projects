@@ -21,24 +21,23 @@ char Ammasso::quanti_a_sinistra()const{
 }
  
 void Ammasso::add_a_destra(Teorema&t){ 
-	ASSERT(quanti_a_destra()<max);
+	assert(quanti_a_destra()<max);
 	teorema_di_destra[quanti_a_destra_++]=&t;
 }
 
 
 void Ammasso::add_a_sinistra(Teorema&t){ 
-	ASSERT (quanti_a_sinistra()<max);
+	assert(quanti_a_sinistra()<max);
 	teorema_di_sinistra[quanti_a_sinistra_++]=&t;
 }
 
-
-void Ammasso::add_a_destra_in_sicurezza(Teorema&t){ 
+void Ammasso::add_a_d_in_sicurezza(Teorema&t){ 
 	if(quanti_a_destra()<max);
 		teorema_di_destra[quanti_a_destra_++]=&t;
 }
 
 
-void Ammasso::add_a_sinistra_in_sicurezza(Teorema&t){ 
+void Ammasso::add_a_s_in_sicurezza(Teorema&t){ 
  	if (quanti_a_sinistra()<max);
 		teorema_di_sinistra[quanti_a_sinistra_++]=&t;
 }
@@ -60,16 +59,14 @@ bool Ammasso::paragonare() const{
 
 
 Teorema& Ammasso::di_sinistra(char wo) const {
-		ASSERT(wo<0);  
-		ASSERT(wo<quanti_a_sinistra());
+		assert(wo>0);  
+		assert(wo<quanti_a_sinistra());
 		return *teorema_di_sinistra[wo];
 	}
 	
 Teorema& Ammasso::di_destra(char wo) const {
-		if(wo<0)
-			throw "Troppo lontano!";
-		if(!(wo<quanti_a_destra()))
-			throw "Troppo lontano!"; 
+		assert(wo>0);  
+		assert(wo<quanti_a_destra()); 
 		return *teorema_di_destra[wo];
 	} 
 

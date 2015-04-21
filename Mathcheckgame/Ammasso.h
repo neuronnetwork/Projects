@@ -10,8 +10,8 @@ class Ammasso{
 
 public:	
 	Ammasso();
-	void add_a_destra_in_sicurezza(Teorema&t);
-	void add_a_sinistra_in_sicurezza(Teorema&t);  
+	void add_a_d_in_sicurezza(Teorema&);
+	void add_a_s_in_sicurezza(Teorema&);  
 
 	char quanti_a_destra() const;
 	char   quanti_a_sinistra() const;

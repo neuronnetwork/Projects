@@ -3,8 +3,7 @@
 
 #include <cassert>
 #define REALLYasdasd 
-#ifdef  REALLY
-#define ASSERT assert
+#ifdef  REALLY 
 #define BESTAETIGEN Mathcheck::prova 
 #else
 #define NDEBUG 

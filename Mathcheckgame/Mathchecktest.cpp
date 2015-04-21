@@ -24,14 +24,14 @@ int main(int argc, char** argv) {
 		cin >> input;
 		if(input == 'l') { 
 	cout << "added." << endl; 
-			u.add_a_destra_in_sicurezza(x); 
+			u.add_a_d_in_sicurezza(x); 
 		}else
 		if(input == 'p') { 
 		cout<<u.paragonare()<<endl;		
 		}else
 		if(input == 'a')  {
 		
-			u.add_a_sinistra_in_sicurezza(x);
+			u.add_a_s_in_sicurezza(x);
 	cout << "added." << endl; 
 		 }
 		else
