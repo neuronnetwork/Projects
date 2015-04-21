@@ -5,11 +5,11 @@
 #define REALLYasdasd 
 #ifdef  REALLY 
 #define BESTAETIGEN Mathcheck::prova 
-#define COSATRIPLICE Mathcheck::prova 
+#define COSA_TRIPLICE Mathcheck::prova 
 #else
 #define NDEBUG 
 #define BESTAETIGEN Mathcheck::macht_nichts
-#define COSATRIPLICE Mathcheck::macht_nichts 
+#define COSA_TRIPLICE ;
 #endif
 
 #endif

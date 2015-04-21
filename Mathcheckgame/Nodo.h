@@ -3,6 +3,8 @@
 
 #include "String.h"
 
+/* TODO (#1#):   SHORT----->char
+ */
 class Nodo_{
 	 
 protected:

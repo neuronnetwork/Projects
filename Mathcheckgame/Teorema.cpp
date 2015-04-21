@@ -1,5 +1,5 @@
 #include"Teorema.h"
-
+#include "Directives.h" 
   
 Teorema::Teorema(){
 }

@@ -1,5 +1,6 @@
 #include "Nodo.h"
 #include "String.h" 
+#include "Directives.h" 
  
 
 Nodo::Nodo():stato(0){
@@ -75,13 +76,13 @@ String Nodo_::die_Kette(){
 	//cached;
 	if(tipo==0){
 		COSA_TRIPLICE("Non ho nessuna catena!");
-		return ""
+		return *new String(2);
 	}
 	else
 	if(tipo==49){
 		COSA_TRIPLICE("44 oppure 34!");
-		return ""
+		return *new String(2);
 	}
 	else
-		return catena;
+		return *catena;
 }
