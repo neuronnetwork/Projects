@@ -32,7 +32,17 @@ void Ammasso::add_a_sinistra(Teorema&t){
 }
 
 
- 
+void Ammasso::add_a_destra_in_sicurezza(Teorema&t){ 
+	if(quanti_a_destra()<max);
+		teorema_di_destra[quanti_a_destra_++]=&t;
+}
+
+
+void Ammasso::add_a_sinistra_in_sicurezza(Teorema&t){ 
+ 	if (quanti_a_sinistra()<max);
+		teorema_di_sinistra[quanti_a_sinistra_++]=&t;
+}
+
 bool Ammasso::paragonare() const{ 
 	if(quanti_a_sinistra()!=quanti_a_destra())
 		return false;

@@ -2,13 +2,13 @@
 #define DirectivesH
 
 #include <cassert>
-#define REALLY
+#define REALLYasdasd 
 #ifdef  REALLY
-#define BESTAETIGEN Mathcheck::prova 
 #define ASSERT assert
+#define BESTAETIGEN Mathcheck::prova 
 #else
+#define NDEBUG 
 #define BESTAETIGEN Mathcheck::macht_nichts
-#define ASSERT Mathcheck::macht_nichts
 #endif
 
 #endif

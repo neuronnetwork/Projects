@@ -10,14 +10,19 @@ class Ammasso{
 
 public:	
 	Ammasso();
-	void add_a_destra  (Teorema&);	
-	void add_a_sinistra(Teorema&);	
+	void add_a_destra_in_sicurezza(Teorema&t);
+	void add_a_sinistra_in_sicurezza(Teorema&t);  
+
 	char quanti_a_destra() const;
 	char   quanti_a_sinistra() const;
 	Teorema& di_sinistra(char) const;
 	Teorema& di_destra(char) const;
 	bool paragonare() const;
-
+	
+protected:
+	void add_a_destra  (Teorema&);	
+	void add_a_sinistra(Teorema&);	
+	
 private:
 	static const char max=3;
 	Teorema* teorema_di_sinistra[max];
