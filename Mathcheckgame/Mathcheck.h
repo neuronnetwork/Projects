@@ -1,6 +1,7 @@
 #ifndef MathcheckH
 #define MathcheckH 
 
+#include "Directives.h"
 #include"String.h"
 
 
