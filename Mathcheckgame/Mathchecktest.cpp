@@ -22,19 +22,19 @@ int main(int argc, char** argv) {
 	cout << "Ready." << endl;
 	while(1) {
 		cin >> input;
-		if(input == 'b') { 
-		
-			u.add_a_sinistra(y);
+		if(input == 'l') { 
+	cout << "added." << endl; 
+			u.add_a_destra(x);
+		//	u.add_a_sinistra(x);
 		}else
 		if(input == 'p') { 
 		cout<<u.paragonare()<<endl;		
 		}else
-		if(input == 'a') try{
+		if(input == 'a')  {
 		
 			u.add_a_sinistra(x);
 	cout << "added." << endl; 
-		    
-		}catch(const char*a){cout<<a<<endl;}
+		 }
 		else
 		if(input == 'm') {
 			a=b;

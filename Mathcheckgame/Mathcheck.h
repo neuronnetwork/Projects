@@ -16,6 +16,7 @@ class Mathcheck{
                 static int mangia(string&s,int da,string cosa=" ");
                 
                 static inline void macht_nichts(){	};
+                static bool prova(bool se,const char*problema);
 };
 
 #endif

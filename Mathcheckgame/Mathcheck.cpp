@@ -1,5 +1,18 @@
 #include  "Mathcheck.h"
- 
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+
+bool Mathcheck::prova(bool se,const char*problema){
+	if(se){
+		cout<< problema<<"!"<<endl;
+		cout.flush();
+		throw (problema);
+	}
+	return se;
+}
+
 int Mathcheck::ultimo(string s,string cosa){
 	return ultimo(s,0,cosa);
 }
