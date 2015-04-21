@@ -9,7 +9,7 @@ Un amasso di teorema, con il tubo di prove entre le due  estremita'
 class Amasso{
 
 public:	
-	add(Teorema&);	
+	void add(Teorema&);	
 
 private:
 	Teorema* Teoremi_di_sinistra[3];
