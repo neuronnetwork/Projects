@@ -32,21 +32,18 @@ int main(int argc, char** argv) {
 	//	cout<<u.teorema_di_sinistra(1)<<endl;		
 		}else
 		if(input == 'a')  {
-			u.add_a_s_in_sicurezza(x);
+			u.add_a_s_in_sicurezza(y);
 	cout << "added." << endl; 
 		 }
 		else
 		if(input == 'm') {
-			a=b;
+			x=y;
 		    
 		}else
 		if(input == 'n') {
 			  
 		     cout<< (a==b)<<endl;;
-		}else
-		if(input == 'b') {
-		     cout<< (a==a)<<endl;;
-		} else
+		}else 
 		if(input == 's') {
 		    s.test("");
 		} else 

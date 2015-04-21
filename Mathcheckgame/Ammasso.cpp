@@ -46,11 +46,7 @@ bool Ammasso::paragonare() const{
 	if(quanti_a_sinistra()!=quanti_a_destra())
 		return false;
 
-	for (int e=0;e<quanti_a_sinistra();++e)
-		if((&t_di_sinistra[e]==
-			&t_di_destra[e]	))
-				return true;
-	for (int e=0;e<quanti_a_sinistra();++e)
+ 	for (int e=0;e<quanti_a_sinistra();++e)
 		if(!(t_di_sinistra[e]==
 			t_di_destra[e]	))
 				return false;
