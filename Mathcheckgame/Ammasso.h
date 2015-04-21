@@ -15,7 +15,7 @@ public:
 	char quanti_a_destra() const;
 	char   quanti_a_sinistra() const;
 	Teorema& di_sinistra(char) const;
-	Teorema& di_destra(char) const;
+	Teorema& di_destra(char)  ;
 	bool paragonare() const;
 
 private:
